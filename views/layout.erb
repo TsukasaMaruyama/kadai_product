@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>Couting Stars</title>
+	<!-- BootstrapのCSS読み込み -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid containerc">
+        <div class="navbar-header">
+          
+          <a class="navbar-brand" href="#">Counting Stars</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navigation">
+            <% if @current_user %>
+          <p class="navbar-text navbar-right"><a href="/signout">ログアウトする</a></p>
+          <p class="navbar-text navbar-right"><%= @current_user.name %>さんこんにちは</p>
+          <% else %>
+          <p class="navbar-text navbar-right"><a href="/signin">ログインする</a></p>
+          <% end %>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+    <%= yield %>
+    </div>
+</body>
+</html>

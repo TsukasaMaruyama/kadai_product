@@ -1,10 +1,13 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-	<meta charset="UTF-8">
-	<title>タイトル</title>
-</head>
-<body>
+<h2>テーマ一覧</h2>
 
-</body>
-</html>
+<% @themes.each do |theme| %>
+<h3><%= theme.title %></h3>
+<p><%= theme.description %></p>
+<p><%= theme.creator.name %></p>
+<% end %>
+
+<h2>作ったテーマ</h2>
+<% @create_themes.each do |theme| %>
+<h3><%= theme.title %></h3>
+<p><%= theme.description %></p>
+<% end %>
