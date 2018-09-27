@@ -1,5 +1,40 @@
-<form action="/themes/new" method="post">
-<input type="text" name="title">
-<textarea name="description"></textarea>
-<input type="submit" value="テーマを作成">
-</form>
+<div style="padding-left: calc((100% - 500px)/2);padding-right: calc((100% - 500px)/2); padding-top: 150px">
+  <form action="/themes/new" method="post">
+    <p class="createNewTheme__title">Create New Theme</p>
+    <div>
+      <div>
+        <input name="title" type="text" placeholder="title" class="createNewTheme__input"><br>
+        <input name="description" type="text" placeholder="description" class="createNewTheme__input"><br>
+        <input type="submit" value="Create" class="createNewTheme__submit">
+      </div>
+    </div>
+  </form>
+</div>
+
+<style>
+  .createNewTheme__input {
+    width: 100%;
+    border: 1px solid black;
+    color: black;
+    padding: 15px;
+    margin-top: 20px;
+  }
+
+
+  .createNewTheme__title {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .createNewTheme__submit {
+    width: 100%;
+    border: 1px solid black;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+</style>
+

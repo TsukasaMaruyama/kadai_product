@@ -1,13 +1,42 @@
-<h2>テーマ一覧</h2>
-
+<div style="padding: 0 100px">
+  <div class="createNewBtnContainer">
+  <a href="/themes/new" class="createNewBtn" >Create New Theme</a>
+  </div>
+<div class="themeCardContainer">
 <% @themes.each do |theme| %>
-<h3><%= theme.title %></h3>
-<p><%= theme.description %></p>
-<p><%= theme.creator.name %></p>
+  <div class="themeCard">
+    <div onclick="location.href='/themes/detail/<%= theme.id %>'">
+      <p class="themeCard__desc"><%= theme.title %></p>
+      <p class="themeCard__info">
+        <%= theme.creator.name %><br>
+        <%= theme.created_at.strftime("%Y/%m/%d") %>
+      </p>
+      <img class="themeCard__image" src="https://pbs.twimg.com/profile_images/581025665727655936/9CnwZZ6j.jpg">
+    </div>
+    <p class="themeCard__count"><%= theme.count %></p>
+    <form action="/countup" method="post">
+      <input type="hidden" value="<%= theme.id %>" name="id">
+      <input type="submit" class="themeCard__btn js-countBtn" value="+">
+    </form>
+  </div>
 <% end %>
+</div>
+</div>
 
-<h2>作ったテーマ</h2>
-<% @create_themes.each do |theme| %>
-<h3><%= theme.title %></h3>
-<p><%= theme.description %></p>
-<% end %>
+
+<style>
+  .createNewBtn {
+    background-color: #579FE4;
+    color: white;
+    padding: 15px 40px;
+    font-size: 20px;
+    border: none;
+    border-radius: 3px;
+  }
+
+  .createNewBtnContainer {
+    width: 100%;
+    text-align: center;
+    margin: 30px auto;
+  }
+</style>

@@ -1,5 +1,76 @@
-<form action="/signup" method="post">
-<input type="text" name="name">
-<input type="password" name="password">
-<input type="submit" value="会員登録">
-</form>
+<img src="http://www.wallpaper-box.com/star/images/star76.jpg" class="backImg">
+<div style="padding-left: calc((100% - 500px)/2);padding-right: calc((100% - 500px)/2); padding-top: 150px">
+  <form action="/signin" method="post">
+    <div>
+      <p class="signInUpSubTitle">星でも数えようじゃないか</p>
+      <p class="signInUpLogo"><i class="fas fa-american-sign-language-interpreting"></i></p>
+      <p class="signInUpTitle">Counting Stars</p>
+      <div class="signInUpContainer">
+        <input name="name" placeholder="username" class="signInUpInput"><br>
+        <input name="password" type="password" placeholder="password" class="signInUpInput"><br>
+        <input name="password" type="password_confirmation" placeholder="password_confirmation" class="signInUpInput"><br>
+        <input type="submit" value="SIGN UP" class="signInUpSubmit">
+        <div style="width: 100%;text-align: right;padding-top: 10px">
+          <a href="/signup" class="signInUpChange">すでにアカウントを持っている方</a>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+<style>
+  .signInUpInput {
+    width: 100%;
+    border: 1px solid black;
+    color: white;
+    background-color: rgba(255,255,255,0.1);
+    padding: 15px;
+    margin-top: 20px;
+  }
+
+  .backImg {
+    position: absolute;
+    z-index: -100;
+    width: 100%;
+  }
+
+  .signInUpTitle {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .signInUpLogo {
+    text-align: center;
+    font-size: 130px;
+    color: white;
+  }
+
+  .signInUpSubTitle {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .signInUpSubmit {
+    width: 100%;
+    border: 1px solid black;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .signInUpChange {
+    color: white;
+    right: 0px;
+  }
+
+  .signInUpContainer {
+    position: relative;
+  }
+</style>
+
