@@ -1,30 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a51e3fb-431f-4e2e-ada3-381e1cffa19d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.rakeTasks" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kadai_product.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20180926104612_add_columns.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/mypage.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/themes_detail.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/development.db" beforeDir="false" afterPath="$PROJECT_DIR$/db/development.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models.rb" beforeDir="false" afterPath="$PROJECT_DIR$/models.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/index.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/layout.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/sign_in.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/sign_in.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/sign_up.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/sign_up.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/themes_new.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/themes_new.erb" afterDir="false" />
-    </list>
+    <list default="true" id="1a51e3fb-431f-4e2e-ada3-381e1cffa19d" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,12 +214,12 @@
       <workItem from="1537944198956" duration="85000" />
       <workItem from="1537944344075" duration="90000" />
       <workItem from="1537944591841" duration="85000" />
-      <workItem from="1537944702037" duration="33308000" />
+      <workItem from="1537944702037" duration="33556000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34383000" />
+    <option name="totallyTimeSpent" value="34631000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

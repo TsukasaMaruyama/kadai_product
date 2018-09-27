@@ -10,8 +10,7 @@ enable :sessions
 before do
   if request.path != '/signin' && request.path != '/signup'
     if session[:user].nil?
-      @current_user = User.find(1)
-      # redirect '/signin'
+      redirect '/signin'
     else
       @current_user = User.find(session[:user])
     end
